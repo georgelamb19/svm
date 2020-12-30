@@ -17,7 +17,7 @@ Kernel functions available:
 
 Generalisation to the multiclass setting is achieved using One vs One (OVO).
 
-An example Jupyter notebook is provided for training and testing a support vector classifier (SVC) on a reduced version of the MNIST dataset.
+An example Jupyter notebook is provided for training and testing a support vector classifier on a reduced version of the MNIST dataset.
 
 ## Code
 
