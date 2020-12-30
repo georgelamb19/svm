@@ -1,11 +1,21 @@
 # svm
 
-## test
+This repository contains Python code for training and testing a multiclass soft-margin kernelised SVM implemented using NumPy.
 
-SVMs implemented and optimised in Python using (i) the Log Barrier method; (ii) Sequential Minimal Optimisation (SMO)
-test
+## Overview
 
-This repository includes code for training a kernelised SVM with only numpy (specifically does not use any optimization libraries for quadratic programming).
+The loss function used is the L1 standard hinge loss.
+
+The constrained optimisation problems are solved using:
+- Log barrier Interior point method with the feasible start Newton method,
+- Sequenital Minimal Optimisation (SMO) method.
+- CVXOPT python package: https://cvxopt.org/userguide/coneprog.html
+
+Generalisation to the multiclass setting is achieved using One vs One (OVO).
+
+An example Jupyter notebook is provided for training and testing a support vector classifier (SVC) on a reduced version of the MNIST dataset.
+
+## Code
 
 Includes implementations for
 
@@ -15,6 +25,8 @@ Kernels (Gaussian and Polynomial)
 Both optimisations optimise the dual objective, so kernelisation is easily permitted. This repo also includes an example Jupyter Notebook training an SVM with both optimisation methods on the MNIST dataset.
 
 Some notes: the code is for a binary SVM classifier, and the SMO implementation does not use advanced heuristics for picking the order of dual variables to optimise.
+
+## Resources
 
 References I found very helpful:
 
