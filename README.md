@@ -32,6 +32,7 @@ A list of optimisation algorithms that have been coded up in this repository inc
 ## Resources
 
 References I found very helpful:
+- http://cs229.stanford.edu/summer2020/cs229-notes3.pdf (SVM theory)
 - http://cs229.stanford.edu/materials/smo.pdf (psuedocode for the simplified SMO algorithm by Andrew Ng)
 - https://web.stanford.edu/~boyd/cvxbook/ (psuedocode for the barrier method and feasible Newton method)
 - https://link.springer.com/book/10.1007/978-0-387-40065-5 (for linesearch methods)
